@@ -1,6 +1,36 @@
 @font-face {
-	font-family: "Roboto";
+	font-family: "circe";
 	font-display: swap;
-	src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("ttf");
-	font-weight: 900;
+	src: url("../fonts/circe-bold.woff2") format("woff2"), url("../fonts/circe-bold.woff") format("woff"), url("../fonts/circe-bold.ttf") format("ttf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "circe";
+	font-display: swap;
+	src: url("../fonts/circe-extrabold.woff2") format("woff2"), url("../fonts/circe-extrabold.woff") format("woff"), url("../fonts/circe-extrabold.ttf") format("ttf");
+	font-weight: 800;
+}
+@font-face {
+	font-family: "circe";
+	font-display: swap;
+	src: url("../fonts/circe-extralight.woff2") format("woff2"), url("../fonts/circe-extralight.woff") format("woff"), url("../fonts/circe-extralight.ttf") format("ttf");
+	font-weight: 200;
+}
+@font-face {
+	font-family: "circe";
+	font-display: swap;
+	src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "circe";
+	font-display: swap;
+	src: url("../fonts/circe-thin.woff2") format("woff2"), url("../fonts/circe-thin.woff") format("woff"), url("../fonts/circe-thin.ttf") format("ttf");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "circe";
+	font-display: swap;
+	src: url("../fonts/circe.woff2") format("woff2"), url("../fonts/circe.woff") format("woff"), url("../fonts/circe.ttf") format("ttf");
+	font-weight: 400;
 }

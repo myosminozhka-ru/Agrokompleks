@@ -1,0 +1,176 @@
+.footer {
+    margin-bottom: 37px;
+    @media all and (max-width: 1023px) {
+        margin-bottom: 25px;
+    }
+    &__in {
+        background: #1A1A1A;
+        border-radius: 10px;
+        @media all and (max-width: 1023px) {
+            padding: 40px 20px;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px;
+    }
+    &__logo {
+        flex: 0 0 170px;
+    }
+    &__menu {
+        max-width: 140px;
+        width: 100%;
+        margin-left: 60px;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            li {
+                width: 50%;
+                a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #fff;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin-bottom: 16px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    &__tel {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+        display: inline-block;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__mail {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        display: inline-block;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__reg {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #8BC63E;
+        border-radius: 4px;
+        padding: 20px 30px;
+        text-decoration: none;
+        transition: all .3s ease-out;
+        &:hover {
+            background: #9CDD48;
+        }
+        &:active {
+            background: #7CB433;
+        }
+    }
+    &__bottom {
+        padding: 16px 40px;
+        border-top: 1px solid #303030;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            padding: 0;
+            padding-top: 24px;  
+            flex-direction: column;
+        }
+    }
+    &__copy {   
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        max-width: 260px;
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 12px;
+        }
+    }
+    &__links {
+        width: calc(100% - 270px);
+        @media all and (max-width: 1023px) {
+            width: 100%;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            @media all and (max-width: 1023px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            li {
+                a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #fff;
+                    text-decoration: none;
+                    margin-left: 24px;
+                    display: inline-block;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    @media all and (max-width: 1023px) {
+                        text-align: center;
+                        margin-left: 0;
+                        font-size: 12px;
+                        line-height: 140%;
+                    }
+                }
+                @media all and (max-width: 1023px) {
+                    &:not(:last-child) {
+                        a {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
