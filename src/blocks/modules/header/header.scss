@@ -1,0 +1,23 @@
+.header {
+    padding-top: 32px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+    @media all and (max-width: 750px) {
+        padding-top: 20px;
+    }
+    &__in {
+        padding: 27px 24px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            padding: 20px;
+        }
+        @media all and (max-width: 750px) {
+            padding: 16px 20px;
+        }
+    }
+}

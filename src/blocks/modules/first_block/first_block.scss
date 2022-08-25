@@ -1,0 +1,87 @@
+.first_block {
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -25px;
+    @media all and (max-width: 750px) {
+        margin-top: 20px;
+    }
+    &__slider {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &__block {
+        min-height: 556px;
+        display: flex !important;
+        align-items: center;
+        padding: 56px;
+        padding-bottom: 110px;
+        @media all and (max-width: 1023px) {
+            min-height: 359px;
+            padding: 60px 32px; 
+        }
+        @media all and (max-width: 750px) {
+            
+        }
+    }
+    &__info {
+        max-width: 512px;
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            max-width: 335px;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 140%;
+        color: #141716;
+        margin-bottom: 16px;
+        @media all and (max-width: 1023px) {
+            font-size: 40px;
+            margin-bottom: 16px;
+            line-height: 120%;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #999999;
+        margin-bottom: 32px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+    }
+    .slick-prev {
+        top: unset;
+        transform: unset;
+        left: 56px;
+        bottom: 56px;
+        @media all and (max-width: 1023px) {
+            display: none !important;
+        }
+    }
+    .slick-next {
+        top: unset;
+        transform: unset;
+        right: unset;
+        left: 248px;
+        bottom: 56px;
+        @media all and (max-width: 1023px) {
+            display: none !important;
+        }
+    }
+    .slick-dots {
+        bottom: 76px;
+        left: 128px;
+        width: 98px;
+        @media all and (max-width: 1023px) {
+            bottom: 16px;
+            left: 20px;
+            right: 20px;
+            width: 100%;
+        }
+    }
+}
