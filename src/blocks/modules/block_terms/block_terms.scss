@@ -1,0 +1,155 @@
+.block_terms {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media all and (max-width: 750px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 100%;
+        color: #141716;
+        margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 32px;
+            font-size: 40px;    
+        }
+        @media all and (max-width: 750px) {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+            br {
+                display: none;
+            }
+        }
+    }
+    .tabs {
+        display: flex;
+        align-items: center;
+        &__caption {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex: 0 0 500px;    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #8BC63E;
+            height: 500px;
+            position: relative;
+            margin-right: 7px;
+            &:before {
+                position: absolute;
+                content: '';
+                width: calc(100% - 32px);
+                height: calc(100% - 32px);
+                margin: 16px;
+                pointer-events: none;
+                border-radius: 50%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 16px solid #fff;
+            }
+            li {
+                display: none;
+                &:nth-child(1) {
+                    display: block;
+                }
+            }
+        }
+        &__contents {
+            width: 100%;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 197px;
+                height: 481px;
+                z-index: 1;
+                left: 25px;
+                top: 21px;
+                background: url("data:image/svg+xml,%3Csvg width='198' height='483' viewBox='0 0 198 483' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.509827 1C254.083 48.9194 269.228 425.665 5.00002 481.584' stroke='%23BCEC7D' stroke-dasharray='6 6'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                @media all and (max-width: 1319px) {
+                    display: none;
+                }
+            }
+        }
+        &__numb {
+            flex: 0 0 50px;
+            height: 50px;
+            margin-right: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #E9F0E4;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: #141716;
+            transition: all .3s ease-out;
+        }
+        &__info {
+            width: 100%;
+        }
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            color: #141716;
+            margin-bottom: 8px;
+            transition: all .3s ease-out;
+        }
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #999999;
+        }
+        &__content {
+            margin-bottom: 44px;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            &:nth-child(1), &:nth-child(4) {
+                margin-bottom: 30px;
+            }
+            &:nth-child(2) {
+                margin-left: 164px;
+                @media all and (max-width: 1319px) {
+                    margin-left: 34px;
+                }
+            }
+            &:nth-child(3) {
+                margin-left: 196px;
+                @media all and (max-width: 1319px) {
+                    margin-left: 66px;
+                }
+            }
+            &:nth-child(4) {
+                margin-left: 164px;
+                @media all and (max-width: 1319px) {
+                    margin-left: 34px;
+                }
+            }
+            display: flex;
+            &.active {
+                .tabs__numb {
+                    background: #8BC63E;
+                    color: #fff;
+                }
+                .tabs__title {
+                    color: #8BC63E;
+                }
+            }
+        }
+    }
+}

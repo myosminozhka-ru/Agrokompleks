@@ -1,7 +1,7 @@
 .first_block {
     border-radius: 0px 0px 10px 10px;
     margin-top: -25px;
-    @media all and (max-width: 750px) {
+    @media all and (max-width: 540px) {
         margin-top: 20px;
     }
     &__slider {
@@ -11,22 +11,24 @@
     &__block {
         min-height: 556px;
         display: flex !important;
+        text-decoration: none;
         align-items: center;
         padding: 56px;
         padding-bottom: 110px;
         @media all and (max-width: 1023px) {
             min-height: 359px;
             padding: 60px 32px; 
+            background-position: center !important;
         }
-        @media all and (max-width: 750px) {
-            
+        @media all and (max-width: 540px) {
+            min-height: 1px;
+            padding: 30px 16px;    
         }
     }
     &__info {
-        max-width: 512px;
-        width: 100%;
-        @media all and (max-width: 1023px) {
-            max-width: 335px;
+        width: 50%;
+        @media all and (max-width: 380px) {
+            width: 65%;
         }
     }
     &__title {
@@ -41,6 +43,10 @@
             margin-bottom: 16px;
             line-height: 120%;
         }
+        @media all and (max-width: 540px) {
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
     }
     &__text {
         font-style: normal;
@@ -53,12 +59,18 @@
             margin-bottom: 24px;
             font-size: 14px;
         }
+        @media all and (max-width: 540px) {
+            margin-bottom: 9px;
+            font-size: 9px;
+            line-height: 120%;
+        }
     }
     .slick-prev {
         top: unset;
         transform: unset;
         left: 56px;
         bottom: 56px;
+        z-index: 5;
         @media all and (max-width: 1023px) {
             display: none !important;
         }
@@ -69,6 +81,7 @@
         right: unset;
         left: 248px;
         bottom: 56px;
+        z-index: 5;
         @media all and (max-width: 1023px) {
             display: none !important;
         }
@@ -82,6 +95,12 @@
             left: 20px;
             right: 20px;
             width: 100%;
+        }
+    }
+    &__btn {
+        @media all and (max-width: 540px) {
+            padding: 4px 12px;
+            font-size: 10px;
         }
     }
 }
