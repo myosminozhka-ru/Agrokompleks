@@ -61,6 +61,12 @@
                     display: block;
                 }
             }
+            @media all and (max-width: 1023px) {
+                flex: none;
+                width: 220px;
+                height: 220px;
+                margin-right: 40px;
+            }
         }
         &__contents {
             width: 100%;
@@ -77,6 +83,9 @@
                 @media all and (max-width: 1319px) {
                     display: none;
                 }
+            }
+            @media all and (max-width: 1023px) {
+                width: calc(100% - 260px);
             }
         }
         &__numb {

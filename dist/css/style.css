@@ -652,13 +652,6 @@ template {
 @font-face {
   font-family: "circe";
   font-display: swap;
-  src: url("../fonts/circe-extralight.woff2") format("woff2"), url("../fonts/circe-extralight.woff") format("woff"), url("../fonts/circe-extralight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "circe";
-  font-display: swap;
   src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
   font-weight: 300;
 }
@@ -675,6 +668,13 @@ template {
   font-display: swap;
   src: url("../fonts/circe.woff2") format("woff2"), url("../fonts/circe.woff") format("woff"), url("../fonts/circe.ttf") format("ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "circe";
+  font-display: swap;
+  src: url("../fonts/circe-extralight.woff2") format("woff2"), url("../fonts/circe-extralight.woff") format("woff"), url("../fonts/circe-extralight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 body {
@@ -1726,6 +1726,17 @@ a {
   .block_terms__title {
     margin-bottom: 32px;
     font-size: 40px;
+  }
+
+  .block_terms .tabs__caption {
+    flex: none;
+    width: 220px;
+    height: 220px;
+    margin-right: 40px;
+  }
+
+  .block_terms .tabs__contents {
+    width: calc(100% - 260px);
   }
 
   .reg_red__in {
