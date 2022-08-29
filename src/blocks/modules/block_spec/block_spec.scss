@@ -1,0 +1,21 @@
+.block_spec {
+    background: #F7F7F7 url('../img/bg_spec.png') 50% / 100% no-repeat;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 100%;
+        color: #141716;
+        margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            font-size: 40px;
+            padding-right: 100px;
+        }
+        @media all and (max-width: 750px) {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+    }
+}
