@@ -13,14 +13,14 @@
 @font-face {
 	font-family: "circe";
 	font-display: swap;
-	src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
-	font-weight: 300;
+	src: url("../fonts/circe-extralight.woff2") format("woff2"), url("../fonts/circe-extralight.woff") format("woff"), url("../fonts/circe-extralight.ttf") format("ttf");
+	font-weight: 200;
 }
 @font-face {
 	font-family: "circe";
 	font-display: swap;
-	src: url("../fonts/circe-thin.woff2") format("woff2"), url("../fonts/circe-thin.woff") format("woff"), url("../fonts/circe-thin.ttf") format("ttf");
-	font-weight: 100;
+	src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
+	font-weight: 300;
 }
 @font-face {
 	font-family: "circe";
@@ -31,6 +31,6 @@
 @font-face {
 	font-family: "circe";
 	font-display: swap;
-	src: url("../fonts/circe-extralight.woff2") format("woff2"), url("../fonts/circe-extralight.woff") format("woff"), url("../fonts/circe-extralight.ttf") format("ttf");
-	font-weight: 200;
+	src: url("../fonts/circe-thin.woff2") format("woff2"), url("../fonts/circe-thin.woff") format("woff"), url("../fonts/circe-thin.ttf") format("ttf");
+	font-weight: 100;
 }
