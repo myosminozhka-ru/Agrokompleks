@@ -16,10 +16,19 @@ const BlockTerms = class BlockTerms {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 asNavFor: '.sl_js_for',
-                dots: true,
-                // centerMode: true,
-                // focusOnSelect: true,
-                variableWidth: true
+                dots: false,
+                arrows: false,
+                variableWidth: true,
+                responsive: [
+                  {
+                    breakpoint: 751,
+                    settings: {
+                        dots: true,
+                        adaptiveHeight: true,
+                        variableWidth: false
+                    }
+                  },
+                ]
               });
         }
     }

@@ -645,8 +645,8 @@ template {
 @font-face {
   font-family: "circe";
   font-display: swap;
-  src: url("../fonts/circe-extrabold.woff2") format("woff2"), url("../fonts/circe-extrabold.woff") format("woff"), url("../fonts/circe-extrabold.ttf") format("ttf");
-  font-weight: 800;
+  src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 @font-face {
@@ -654,13 +654,6 @@ template {
   font-display: swap;
   src: url("../fonts/circe-extralight.woff2") format("woff2"), url("../fonts/circe-extralight.woff") format("woff"), url("../fonts/circe-extralight.ttf") format("ttf");
   font-weight: 200;
-}
-
-@font-face {
-  font-family: "circe";
-  font-display: swap;
-  src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
-  font-weight: 300;
 }
 
 @font-face {
@@ -675,6 +668,13 @@ template {
   font-display: swap;
   src: url("../fonts/circe-thin.woff2") format("woff2"), url("../fonts/circe-thin.woff") format("woff"), url("../fonts/circe-thin.ttf") format("ttf");
   font-weight: 100;
+}
+
+@font-face {
+  font-family: "circe";
+  font-display: swap;
+  src: url("../fonts/circe-extrabold.woff2") format("woff2"), url("../fonts/circe-extrabold.woff") format("woff"), url("../fonts/circe-extrabold.ttf") format("ttf");
+  font-weight: 800;
 }
 
 body {
@@ -1272,13 +1272,18 @@ a {
   margin-left: 164px;
 }
 
-.block_terms .tabs__content.active .tabs__numb {
+.block_terms .tabs .slick-current.slick-active .tabs__numb {
   background: #8BC63E;
   color: #fff;
 }
 
-.block_terms .tabs__content.active .tabs__title {
+.block_terms .tabs .slick-current.slick-active .tabs__title {
   color: #8BC63E;
+}
+
+.block_terms .tabs .slick-dots {
+  position: relative;
+  margin-top: 24px;
 }
 
 .no-webp .reg_red{
@@ -1562,6 +1567,17 @@ a {
   text-decoration: underline;
 }
 
+@media all and (min-width: 1024px) {
+  .block_terms .tabs__content.active .tabs__numb {
+    background: #8BC63E;
+    color: #fff;
+  }
+
+  .block_terms .tabs__content.active .tabs__title {
+    color: #8BC63E;
+  }
+}
+
 @media all and (max-width: 1319px) {
   .block_terms .tabs__contents:before {
     display: none;
@@ -1728,6 +1744,25 @@ a {
     font-size: 40px;
   }
 
+  .block_terms .tabs__caption:before {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    margin: 8px;
+    border: 8px solid #fff;
+  }
+
+  .block_terms .tabs__caption li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block_terms .tabs__caption li img {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .block_terms .tabs__caption {
     flex: none;
     width: 220px;
@@ -1737,6 +1772,40 @@ a {
 
   .block_terms .tabs__contents {
     width: calc(100% - 260px);
+  }
+
+  .block_terms .tabs__contents:after {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    border: 1px dashed #BCEC7D;
+    content: "";
+    right: 0;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .block_terms .tabs__numb {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+    flex: none;
+    font-size: 18px;
+    margin-right: 0;
+  }
+
+  .block_terms .tabs__text {
+    font-size: 14px;
+  }
+
+  .block_terms .tabs__content {
+    width: 288px !important;
+    margin-right: 66px;
+  }
+
+  .block_terms .tabs__content:nth-child(1),
+  .block_terms .tabs__content:nth-child(4) {
+    margin-bottom: 0px;
   }
 
   .reg_red__in {
@@ -1913,6 +1982,55 @@ a {
 
   .block_terms__title br {
     display: none;
+  }
+
+  .block_terms .tabs {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .block_terms .tabs__caption:before {
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    margin: 6px;
+    border: 6px solid #fff;
+  }
+
+  .block_terms .tabs__caption li img {
+    width: 66px;
+  }
+
+  .block_terms .tabs__caption {
+    margin-right: 0;
+    width: 146px;
+    height: 146px;
+    margin-bottom: 24px;
+  }
+
+  .block_terms .tabs__contents {
+    width: 100%;
+  }
+
+  .block_terms .tabs__contents:after {
+    top: 25px;
+  }
+
+  .block_terms .tabs__numb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .block_terms .tabs__text {
+    font-size: 16px;
+  }
+
+  .block_terms .tabs__content {
+    margin-right: 0;
+    width: 100%;
+    width: 100% !important;
   }
 
   .reg_red__in {
