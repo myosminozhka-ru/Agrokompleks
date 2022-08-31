@@ -1,0 +1,53 @@
+.breadcrums {
+    padding-top: 16px;
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 16px 24px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        @media all and (max-width: 1023px) {
+            padding: 16px;
+        }
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #999999;
+        text-decoration: none;
+        @media all and (max-width: 750px) {
+            font-size: 14px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+        &.main {
+            font-size: 0;
+            width: 24px;
+            height: 24px;
+            background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 10L12 3L20 10V20H15V16C15 15.2044 14.6839 14.4413 14.1213 13.8787C13.5587 13.3161 12.7956 13 12 13C11.2043 13 10.4413 13.3161 9.87868 13.8787C9.31607 14.4413 9 15.2044 9 16V20H4V10Z' stroke='%23999999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            @media all and (max-width: 750px) {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+    &__splash {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L1 9' stroke='%23999999' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+        margin: 0 12px;
+    }
+    &__page {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8BC63E;
+        @media all and (max-width: 750px) {
+            font-size: 14px;
+        }
+    }
+}

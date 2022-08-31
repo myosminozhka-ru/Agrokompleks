@@ -1,0 +1,101 @@
+.doc_block {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    @media all and (max-width: 1023px) {
+        padding-bottom: 12px;
+    }
+    @media all and (max-width: 750px) {
+        padding-top: 20px;
+        padding-bottom: 4px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        color: #141716;
+        margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+        @media all and (max-width: 750px) {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #999999;
+        margin-bottom: 24px;
+        max-width: 461px;
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+            max-width: 395px;
+        }
+        @media all and (max-width: 750px) {
+            font-size: 16px;
+        }
+    }
+    &__blocks {
+        margin-left: -12px;
+        margin-right: -12px;
+        display: flex;
+        flex-wrap: wrap;
+        @media all and (max-width: 1023px) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @media all and (max-width: 750px) {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
+    &__block {
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 24px;
+        width: calc(25% - 24px);
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 24px;
+        text-align: center;
+        @media all and (max-width: 1023px) {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: calc(25% - 20px);
+            margin-bottom: 20px;
+        }
+        @media all and (max-width: 750px) {
+            margin-left: 8px;
+            margin-right: 8px;
+            width: calc(50% - 16px);
+            margin-bottom: 16px;
+            padding: 24px 12px;
+        }
+    }
+    &__img {
+        margin-bottom: 16px;
+        width: 75px;
+        height: 75px;
+        background: url('../img/bg_icon.svg') 50% / 100% no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    &__tit {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 120%;
+        color: #141716;
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+        }
+    }
+}

@@ -645,8 +645,8 @@ template {
 @font-face {
   font-family: "circe";
   font-display: swap;
-  src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/circe-extrabold.woff2") format("woff2"), url("../fonts/circe-extrabold.woff") format("woff"), url("../fonts/circe-extrabold.ttf") format("ttf");
+  font-weight: 800;
 }
 
 @font-face {
@@ -659,8 +659,8 @@ template {
 @font-face {
   font-family: "circe";
   font-display: swap;
-  src: url("../fonts/circe.woff2") format("woff2"), url("../fonts/circe.woff") format("woff"), url("../fonts/circe.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/circe-light.woff2") format("woff2"), url("../fonts/circe-light.woff") format("woff"), url("../fonts/circe-light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 @font-face {
@@ -673,8 +673,8 @@ template {
 @font-face {
   font-family: "circe";
   font-display: swap;
-  src: url("../fonts/circe-extrabold.woff2") format("woff2"), url("../fonts/circe-extrabold.woff") format("woff"), url("../fonts/circe-extrabold.ttf") format("ttf");
-  font-weight: 800;
+  src: url("../fonts/circe.woff2") format("woff2"), url("../fonts/circe.woff") format("woff"), url("../fonts/circe.ttf") format("ttf");
+  font-weight: 400;
 }
 
 body {
@@ -1681,6 +1681,115 @@ a {
   color: #999999;
 }
 
+.breadcrums {
+  padding-top: 16px;
+}
+
+.breadcrums__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.breadcrums__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+  text-decoration: none;
+}
+
+.breadcrums__link:hover {
+  text-decoration: underline;
+}
+
+.breadcrums__link.main {
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 10L12 3L20 10V20H15V16C15 15.2044 14.6839 14.4413 14.1213 13.8787C13.5587 13.3161 12.7956 13 12 13C11.2043 13 10.4413 13.3161 9.87868 13.8787C9.31607 14.4413 9 15.2044 9 16V20H4V10Z' stroke='%23999999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+
+.breadcrums__splash {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L1 9' stroke='%23999999' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50%/100% no-repeat;
+  margin: 0 12px;
+}
+
+.breadcrums__page {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8BC63E;
+}
+
+.doc_block {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.doc_block__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  color: #141716;
+  margin-bottom: 24px;
+}
+
+.doc_block__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #999999;
+  margin-bottom: 24px;
+  max-width: 461px;
+  width: 100%;
+}
+
+.doc_block__blocks {
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doc_block__block {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+  width: calc(25% - 24px);
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+}
+
+.doc_block__img {
+  margin-bottom: 16px;
+  width: 75px;
+  height: 75px;
+  background: url("../img/bg_icon.svg") 50%/100% no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doc_block__tit {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 120%;
+  color: #141716;
+}
+
 .footer {
   padding-bottom: 37px;
 }
@@ -2091,6 +2200,40 @@ a {
     font-size: 40px;
   }
 
+  .breadcrums__item {
+    padding: 16px;
+  }
+
+  .doc_block {
+    padding-bottom: 12px;
+  }
+
+  .doc_block__title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .doc_block__text {
+    font-size: 14px;
+    max-width: 395px;
+  }
+
+  .doc_block__blocks {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .doc_block__block {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+  }
+
+  .doc_block__tit {
+    font-size: 16px;
+  }
+
   .footer {
     padding-bottom: 32px;
   }
@@ -2345,6 +2488,46 @@ a {
 
   .reg_block__text {
     display: none;
+  }
+
+  .breadcrums__link {
+    font-size: 14px;
+  }
+
+  .breadcrums__link.main {
+    width: 22px;
+    height: 22px;
+  }
+
+  .breadcrums__page {
+    font-size: 14px;
+  }
+
+  .doc_block {
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
+
+  .doc_block__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .doc_block__text {
+    font-size: 16px;
+  }
+
+  .doc_block__blocks {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .doc_block__block {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: calc(50% - 16px);
+    margin-bottom: 16px;
+    padding: 24px 12px;
   }
 
   .footer {

@@ -7,7 +7,7 @@ const FirstBlock = class FirstBlock {
         $('.js_slider_first').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: false,
+            infinite: true,
             arrows: true,
             adaptiveHeight: true,
             dots: true
